@@ -37,6 +37,7 @@ These are global values that exists in the **ZSharp** environment.
 - Any tables within ZSharp can be explored into with `help`.
 
 Examples:
+
 ```lua
 help("Audio.Play"); -- Shows you how to use Audio.Play.
 
@@ -57,6 +58,7 @@ help("ZInstance.List"); -- Shows you how to use ZInstance.List.
 
 Examples:
 - Spawns a new sound with volume set to 1 and assign a `SoundId`.
+
 ```lua
 local zsound = new("ZSound"){
 	Volume = 1;
