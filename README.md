@@ -50,10 +50,11 @@ To run your script, you can press the **Run** button on the bottom left.
 
 ---
 
-## Classes
+## global & Instances and Classes
 
 - [global](docs/global)
-- [ZInstance](docs/ZInstance)
+- [ZInstances](docs/ZInstance.md)
+- [Classes](docs/Class.md)
 
 ---
 ### Examples
