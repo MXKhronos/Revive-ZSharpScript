@@ -82,7 +82,7 @@ help("ZInstance.List"); -- Shows you how to use ZInstance.List.
 Audio:Play("Boombox:Stepping Up");
 ```
 
-This plays the sound called `Boombox:Stepping Up` since it exists in the Revive engine, but you can do more since `Audio:Play` returns a [ZSound](docs/ZSound), you can use their methods and change their properties. `run help("ZInstance.Classes.ZSound")` for more.
+This plays the sound called `Boombox:Stepping Up` since it exists in the Revive engine, but you can do more since [`Audio:Play`](docs/Class/Audio.md#play) returns a [ZSound](docs/ZInstance/ZSound), you can use their methods and change their properties. `run help("ZInstance.Classes.ZSound")` for more.
 
 >⚡To stop the sound. Use `ZInstance:DestroyList("ZSound", true)`. Which destroys all instances matching the word `ZSound` in its name.
 >
