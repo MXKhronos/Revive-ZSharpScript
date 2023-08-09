@@ -19,8 +19,13 @@ These are global values that exists in the **ZSharp** environment.
 | function | pairs |
 | function | pcall |
 | function | print |
+| table | string |
 | table | table |
 | table | task |
+| | |
+| table | CFrame |
+| table | Vector2 |
+| table | Vector3 |
 
 #### ZSharp
 
@@ -36,6 +41,9 @@ These are global values that exists in the **ZSharp** environment.
 | function | [new](#new) |
 
 ---
+
+### Method Description
+
 <a name="help"></a>
 `void` **help**(path: *string*)
 - Outputs help hints and descriptions.
@@ -52,11 +60,13 @@ help("ZInstance.List"); -- Shows you how to use ZInstance.List.
 ```
 
 ---
+
 <a name="log"></a>
 `void` **log**(...)
 - Basically print, but properly formats value.
 
 ---
+
 <a name="new"></a>
 `ZInstance` **new**(className: *string*)
 - Instantiates a new instance of `ClassName`.
