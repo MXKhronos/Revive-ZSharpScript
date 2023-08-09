@@ -53,8 +53,3 @@ back_to_top_text: "Back to top"
 plugins:
   - jekyll-seo-tag
   - jekyll-github-metadata
-
-kramdown:
-  syntax_highlighter_opts:
-    block:
-      line_numbers: true

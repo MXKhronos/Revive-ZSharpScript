@@ -44,7 +44,7 @@ To run your script, you can press the **Run** button on the bottom left.
 
 ### Libraries
 
-To see all available libraries: [global](Library/global)
+To see all available libraries: [global](docs/global)
 
 ---
 ### Examples
@@ -53,7 +53,7 @@ These are examples of what you can currently do in ZSharp. For more details, you
 #### `void` help(path: *string*)
 **ZSharp** has a built in `help` function to list available libraries and shows it's hints and descriptions.
 
-> More info [here](Library/global#help)
+> More info [here](docs/global#help)
 
 Try running some of these in `run` or `code`.
 ```lua
@@ -69,11 +69,11 @@ help("ZInstance.List"); -- Shows you how to use ZInstance.List.
 Audio:Play("Boombox:Stepping Up");
 ```
 
-This plays the sound called `Boombox:Stepping Up` since it exists in the Revive engine, but you can do more since `Audio:Play` returns a [ZSound](Library/ZSound), you can use their methods and change their properties. `run help("ZInstance.Classes.ZSound")` for more.
+This plays the sound called `Boombox:Stepping Up` since it exists in the Revive engine, but you can do more since `Audio:Play` returns a [ZSound](docs/ZSound), you can use their methods and change their properties. `run help("ZInstance.Classes.ZSound")` for more.
 
 >⚡To stop the sound. Use `ZInstance:DestroyList("ZSound", true)`. Which destroys all instances matching the word `ZSound` in its name.
 >
->More info on [ZInstance](Library/ZInstance)
+>More info on [ZInstance](docs/ZInstance)
 
 ```lua
 local zsound = Audio:Play("Boombox:Stepping Up");
@@ -84,5 +84,5 @@ zsound:Destroy();
 ```
 
 #### Spawning an instance
-> Read [here](Library/global#new)
+> Read [here](docs/global#new)
 
