@@ -10,7 +10,8 @@ Audio is a ZSharp library that makes it easy and convenient to play [ZSound](ZSo
 #### Properties
 
 | Type | Key | Default Value |  
-| --- | --- | --- |  
+| --- | --- | --- |
+| No available properties |
 
 #### Methods
 
