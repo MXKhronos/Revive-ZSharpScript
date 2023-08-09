@@ -1,5 +1,5 @@
 title: [Revive Engine - ZSharp Script]
 description: [A sandbox environment for the Revive Engine using lua]
-remote_theme: just-the-docs
+theme: just-the-docs
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
