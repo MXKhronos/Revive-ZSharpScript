@@ -1,3 +1,11 @@
+---
+layout: default
+title: Home
+nav_order: 1
+description: "Welcome to Z-Sharp."
+permalink: /
+---
+
 Welcome to Z-Sharp.
 
 ZSharp runs on a sandboxed `lua` environment on the Revive engine.

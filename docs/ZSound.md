@@ -1,7 +1,8 @@
 ---
 layout: default
 title: ZSound
-nav_order: 3
+parent: ZInstance
+nav_order: 1
 ---
 
 **Inherits:** [ZInstance](ZInstance)
