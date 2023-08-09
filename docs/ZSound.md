@@ -1,3 +1,9 @@
+---
+layout: default
+title: ZSound
+nav_order: 3
+---
+
 **Inherits:** [ZInstance](ZInstance)
 #### Description
 A sandboxed version of [Sound](https://create.roblox.com/docs/reference/engine/classes/Sound).

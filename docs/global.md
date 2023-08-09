@@ -1,3 +1,8 @@
+---
+layout: default
+title: global
+nav_order: 1
+---
 
 These are global values that exists in the **ZSharp** environment. 
 

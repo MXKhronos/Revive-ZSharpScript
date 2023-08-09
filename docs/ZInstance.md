@@ -1,3 +1,9 @@
+---
+layout: default
+title: ZInstance
+nav_order: 2
+---
+
 #### Description
 A sandboxed version of [Instance](https://create.roblox.com/docs/reference/engine/classes/Instance).
 
