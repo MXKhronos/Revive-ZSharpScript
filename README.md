@@ -86,3 +86,6 @@ zsound:Destroy();
 #### Spawning an instance
 > Read [here](Library/global#new)
 
+
+#### More
+- {:toc}
