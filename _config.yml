@@ -4,6 +4,9 @@ remote_theme: just-the-docs/just-the-docs
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 
+url: "https://mxkhronos.github.io/Revive-ZSharpScript/" # the base hostname & protocol for your site, e.g. http://example.com
+repository: MXKhronos/Revive-ZSharpScript # for github-metadata
+
 # Enable or disable the site search
 # Supports true (default) or false
 search_enabled: true
@@ -41,3 +44,17 @@ aux_links:
 aux_links_new_tab: true
 
 color_scheme: dark
+
+enable_copy_code_button: true
+
+back_to_top: true
+back_to_top_text: "Back to top"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-github-metadata
+
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
