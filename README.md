@@ -14,7 +14,7 @@ ZSharp runs on a sandboxed `lua` environment on the Revive engine.
 ---
 ### Terminal
 
-![[resources/images/terminal.png]]
+![Terminal](resources/images/terminal.png)
 
 The terminal mimicks a unix-based terminal but currently it has no file structure.
 
@@ -32,7 +32,7 @@ run log("Hello World!");
 ---
 ### ZSCode
 
-![[resources/images/zscode.png]]
+![ZSCode](resources/images/zscode.png)
 
 Currently, you'll be defaulted to `untitled.zs` and there are no saving and loading functionality. The output which was once the terminal's output will now show up as the output window.
 
@@ -86,6 +86,3 @@ zsound:Destroy();
 #### Spawning an instance
 > Read [here](Library/global#new)
 
-
-#### More
-- {:toc}
