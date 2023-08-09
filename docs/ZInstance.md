@@ -5,7 +5,7 @@ has_children: true
 nav_order: 2
 ---
 
-#### Description
+### Description
 A sandboxed version of [Instance](https://create.roblox.com/docs/reference/engine/classes/Instance).
 
 #### Properties
@@ -14,8 +14,9 @@ A sandboxed version of [Instance](https://create.roblox.com/docs/reference/engin
 | --- | --- | --- |  
 | string | ClassName | ZInstance |  
 | string | [Name](#name) | `ClassName#counter ` |
+| table | [ClassList](#classlist) | {*userdata*} |
 
-#### Methods
+### Methods
 
 | Return Type | Name |
 | --- | --- |
@@ -24,14 +25,24 @@ A sandboxed version of [Instance](https://create.roblox.com/docs/reference/engin
 | void | [DestroyList](#destroylist) (pattern: *string?*, search: *boolean?*) |
 
 ---
-#### Property Descriptions
+
+### Property Descriptions
+
 <a name="name"></a>
 `string` **Name** *= ClassName#counter*
 - By default, every new instance will be named by it's `ClassName` followed by it's index counter.
 - **ZInstance** keeps track of all instances it creates and continuously increment a counter.
 
 ---
-#### Method Descriptions
+
+<a name="classlist"></a>
+`table` **ClassList** *= {userdata}*
+- This table is a dictionary of classes that are available in this ZSharp environment.
+- These classes are not usable and just are proxies of actual classes.
+
+---
+
+### Method Descriptions
 
 <a name="get"></a>
 `ZInstance` **Get**(name: *string*)

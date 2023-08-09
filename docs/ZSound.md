@@ -6,10 +6,10 @@ nav_order: 1
 ---
 
 **Inherits:** [ZInstance](ZInstance)
-#### Description
+### Description
 A sandboxed version of [Sound](https://create.roblox.com/docs/reference/engine/classes/Sound).
 
-#### Properties
+### Properties
 
 | Type | Key | Default Value |  
 | --- | --- | --- |  
@@ -18,7 +18,7 @@ A sandboxed version of [Sound](https://create.roblox.com/docs/reference/engine/c
 | string | SoundId |  |
 | number | Volume | 0.5 |
 
-#### Methods
+### Methods
 
 | Return Type | Name |
 | --- | --- |
@@ -26,7 +26,8 @@ A sandboxed version of [Sound](https://create.roblox.com/docs/reference/engine/c
 | void | [Stop](#stop) () |
 
 ---
-#### Property Descriptions
+
+### Property Descriptions
 
 `number` **PlaybackSpeed** *= 1*
 - `PlaybackSpeed` defaults to 1 for new instances but if you use [Audio:Play](Audio#play), the default value may vary.
@@ -54,7 +55,7 @@ Changes the playing sound to *"Boombox:Get Up On Your Feet"* after 3 seconds.
 
 ---
 
-#### Method Descriptions
+### Method Descriptions
 <a name="play"></a>
 `void` **Play**()
 - Plays the sound

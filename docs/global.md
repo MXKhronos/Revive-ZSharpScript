@@ -8,7 +8,7 @@ These are global values that exists in the **ZSharp** environment.
 
 ---
 
-#### Lua
+### Lua
 
 | Type | Key |
 | --- | --- |
@@ -27,7 +27,7 @@ These are global values that exists in the **ZSharp** environment.
 | table | Vector2 |
 | table | Vector3 |
 
-#### ZSharp
+### ZSharp
 
 | Type | Key |
 | --- | --- |

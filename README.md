@@ -20,7 +20,7 @@ ZSharp runs on a sandboxed `lua` environment on the Revive engine.
 - Locate and open up a terminal in [game](https://www.roblox.com/games/141084271/Rise-of-the-Dead).
 
 ---
-### Terminal
+## Terminal
 
 ![Terminal](resources/images/terminal.png)
 
@@ -38,7 +38,7 @@ run log("Hello World!");
 >⚡You can use `fullscreen` to fullscreen the terminal.
 
 ---
-### ZSCode
+## ZSCode
 
 ![ZSCode](resources/images/zscode.png)
 
@@ -50,15 +50,18 @@ To run your script, you can press the **Run** button on the bottom left.
 
 ---
 
-### Libraries
+## Classes
 
-To see all available libraries: [global](docs/global)
+- [global](docs/global)
+- [ZInstance](docs/ZInstance)
 
 ---
 ### Examples
 These are examples of what you can currently do in ZSharp. For more details, you will have to read through [Libraries](#libraries).
 
-#### `void` help(path: *string*)
+---
+
+`void` **help**(path: *string*)
 **ZSharp** has a built in `help` function to list available libraries and shows it's hints and descriptions.
 
 > More info [here](docs/global#help)
@@ -71,6 +74,8 @@ help("ZInstance.Classes"); -- Shows you all available classes
 
 help("ZInstance.List"); -- Shows you how to use ZInstance.List.
 ```
+
+---
 
 #### Playing a sound
 ```lua
@@ -90,7 +95,17 @@ zsound.Volume = 1;
 task.wait(5);
 zsound:Destroy();
 ```
+---
 
 #### Spawning an instance
-> Read [here](docs/global#new)
+
+```lua
+local zsound = new("ZSound"){
+    SoundId = "rbxassetid://142376088"; -- Parry Gripp - Raining Tacos
+};
+
+zsound:Play(); -- Plays the newly spawned sound.
+```
+
+> More info on [`new(className: *string*)`](docs/global#new).
 

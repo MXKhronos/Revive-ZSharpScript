@@ -1,19 +1,20 @@
 ---
 layout: default
 title: Audio
-nav_order: 3
+parent: Class
+nav_order: 1
 ---
 
-#### Description
+### Description
 Audio is a ZSharp library that makes it easy and convenient to play [ZSound](ZSound) on the fly.
 
-#### Properties
+### Properties
 
 | Type | Key | Default Value |  
 | --- | --- | --- |
 | No available properties |
 
-#### Methods
+### Methods
 
 | Return Type | Name |
 | --- | --- |
@@ -22,10 +23,10 @@ Audio is a ZSharp library that makes it easy and convenient to play [ZSound](ZSo
 | table | [Find](#find) (pattern: *string?*) |
 
 ---
-#### Property Descriptions
+### Property Descriptions
 
 ---
-#### Method Descriptions
+### Method Descriptions
 
 <a name="play"></a>
 `ZSound` **Play**(soundName: *string*)
