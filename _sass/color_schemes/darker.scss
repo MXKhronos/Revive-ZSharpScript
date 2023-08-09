@@ -10,9 +10,9 @@ $btn-primary-color: #4664b0;
 $code-background-color: #15161c; // OneDarkJekyll default for syntax-one-dark-vivid
 $code-linenumber-color: #dee2f7; // OneDarkJekyll .nf for syntax-one-dark-vivid
 $feedback-color: darken($sidebar-color, 3%);
-$table-background-color: #363636;
+$table-background-color: #1e1e1e;
 $search-background-color: #363636;
 $search-result-preview-color: #969696;
-$border-color: #4d4d4d;
+$border-color: #373a49;
 
 @import "./vendor/OneDarkJekyll/syntax"; // this is the one-dark-vivid atom syntax theme
