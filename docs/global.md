@@ -20,8 +20,14 @@ These are global values that exists in the **ZSharp** environment.
 | function | pcall |
 | function | print |
 | table | string |
+| function | select |
 | table | table |
 | table | task |
+| function | tick |
+| function | tonumber |
+| function | tostring |
+| function | typeof |
+| function | unpack |
 | | |
 | table | CFrame |
 | table | Vector2 |
