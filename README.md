@@ -50,15 +50,17 @@ To run your script, you can press the **Run** button on the bottom left.
 
 ---
 
+
 ## global & Instances and Classes
 
+<a name="libraries"></a>
 - [global](docs/global)
 - [ZInstances](docs/ZInstance.md)
 - [Classes](docs/Class.md)
 
 ---
 ### Examples
-These are examples of what you can currently do in ZSharp. For more details, you will have to read through [Libraries](#libraries).
+These are examples of what you can currently do in ZSharp.
 
 ---
 
