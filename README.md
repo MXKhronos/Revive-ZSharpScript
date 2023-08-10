@@ -15,6 +15,7 @@ ZSharp runs on a sandboxed `lua` environment on the Revive engine.
 3. [ZSCode](#zscode)
 4. [Libraries](#libraries)
 5. [Examples](#examples)
+6. [Why It's Made](#why-its-made)
 
 ### Getting Started using ZSharp:
 - Locate and open up a terminal in [game](https://www.roblox.com/games/141084271/Rise-of-the-Dead).
@@ -112,3 +113,12 @@ zsound:Play(); -- Plays the newly spawned sound.
 
 > More info on [`new(className: *string*)`](docs/global#new).
 
+---
+
+### Why it's made
+
+- The idea for this is ambitious, with the development of [Almonds](https://www.roblox.com/games/5623142930/Almdes), we are hoping to incoorporate modded servers in the game. This provides a ease of access to create a modded Almonds server.
+    - To let community servers decide for themselves how their community want the world to be played.
+    - To also be able to create custom community content derived from the base game. 
+- This can also be utilized for some high level puzzle solving minigame.
+- But mostly, this was just fun to work on for me.
