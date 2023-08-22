@@ -39,14 +39,22 @@ These are global values that exists in the **ZSharp** environment.
 | --- | --- |
 | string | ScriptName |
 | | |
-| table | Audio |
-| table | ZInstance |
+| table | [Self](#Self) |
+| table | [Audio](Class/Audio.md) |
+| table | [ZInstance](ZInstance.md) |
 | | |
 | function | [help](#help) |
 | function | [log](#log) |
 | function | [new](#new) |
 
 ---
+
+### Property Description
+
+<a name="Self"></a>
+`table` **Self** = *nil*
+- Self contains property and methods of the calling class or environment.
+- Self only exist if the script is attached to an object. 
 
 ### Method Description
 
