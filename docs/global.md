@@ -56,6 +56,8 @@ These are global values that exists in the **ZSharp** environment.
 - Self contains property and methods of the calling class or environment.
 - Self only exist if the script is attached to an object. 
 
+---
+
 ### Method Description
 
 <a name="help"></a>
