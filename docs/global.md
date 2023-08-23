@@ -1,6 +1,6 @@
 ---
 layout: default
-title: global
+title: Globals
 nav_order: 1
 ---
 
@@ -8,32 +8,9 @@ These are global values that exists in the **ZSharp** environment.
 
 ---
 
-### Lua
+## ZSharp globals
 
-| Type | Key |
-| --- | --- |
-| function | getfenv |
-| function | ipairs |
-| table | math |
-| function | next |
-| function | pairs |
-| function | pcall |
-| function | print |
-| table | string |
-| function | select |
-| table | table |
-| table | task |
-| function | tick |
-| function | tonumber |
-| function | tostring |
-| function | typeof |
-| function | unpack |
-| | |
-| table | CFrame |
-| table | Vector2 |
-| table | Vector3 |
-
-### ZSharp
+### Class & Methods
 
 | Type | Key |
 | --- | --- |
@@ -41,15 +18,14 @@ These are global values that exists in the **ZSharp** environment.
 | | |
 | table | [Self](#Self) |
 | table | [Audio](Class/Audio.md) |
+| table | [TweenService](Class/TweenService.md)
 | table | [ZInstance](ZInstance.md) |
 | | |
 | function | [help](#help) |
 | function | [log](#log) |
 | function | [new](#new) |
 
----
-
-### Property Description
+### Classes
 
 <a name="Self"></a>
 `table` **Self** = *nil*
@@ -58,7 +34,7 @@ These are global values that exists in the **ZSharp** environment.
 
 ---
 
-### Method Description
+### Methods
 
 <a name="help"></a>
 `void` **help**(path: *string*)
@@ -102,3 +78,36 @@ zsound:Play();
 ```
 
 ---
+
+## Globals
+
+### Lua
+
+| Type | Key |
+| --- | --- |
+| function | getfenv |
+| function | ipairs |
+| table | math |
+| function | next |
+| function | pairs |
+| function | pcall |
+| function | print |
+| table | string |
+| function | select |
+| table | table |
+| table | task |
+| function | tick |
+| function | tonumber |
+| function | tostring |
+| function | typeof |
+| function | unpack |
+
+### Roblox
+
+| Type | Key |
+| --- | --- |
+| Enums | Enum |
+| table | CFrame |
+| table | Random |
+| table | Vector2 |
+| table | Vector3 |

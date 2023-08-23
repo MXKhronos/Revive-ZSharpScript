@@ -6,7 +6,7 @@ nav_order: 1
 ---
 
 ### Description
-Audio is a ZSharp library derived from Revive Engine's Audio Librar. It easy and convenient to play [ZSound](ZSound) on the fly.
+Audio is a ZSharp library derived from Revive Engine's Audio Library. It easy and convenient to play [ZSound](ZSound) on the fly.
 
 ### Properties
 
