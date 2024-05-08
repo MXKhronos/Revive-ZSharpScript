@@ -15,12 +15,13 @@ ZSharp runs on a sandboxed `lua` environment on the Revive engine.
 3. [ZSCode](#zscode)
 4. [Libraries](#libraries)
 5. [Examples](#examples)
+6. [Why It's Made](#why-its-made)
 
 ### Getting Started using ZSharp:
 - Locate and open up a terminal in [game](https://www.roblox.com/games/141084271/Rise-of-the-Dead).
 
 ---
-### Terminal
+## Terminal
 
 ![Terminal](resources/images/terminal.png)
 
@@ -38,7 +39,7 @@ run log("Hello World!");
 >⚡You can use `fullscreen` to fullscreen the terminal.
 
 ---
-### ZSCode
+## ZSCode
 
 ![ZSCode](resources/images/zscode.png)
 
@@ -50,15 +51,21 @@ To run your script, you can press the **Run** button on the bottom left.
 
 ---
 
-### Libraries
 
-To see all available libraries: [global](docs/global)
+## global & Instances and Classes
+
+<a name="libraries"></a>
+- [global](docs/global)
+- [ZInstances](docs/ZInstance.md)
+- [Classes](docs/Class.md)
 
 ---
 ### Examples
-These are examples of what you can currently do in ZSharp. For more details, you will have to read through [Libraries](#libraries).
+These are examples of what you can currently do in ZSharp.
 
-#### `void` help(path: *string*)
+---
+
+`void` **help**(path: *string*)
 **ZSharp** has a built in `help` function to list available libraries and shows it's hints and descriptions.
 
 > More info [here](docs/global#help)
@@ -72,12 +79,14 @@ help("ZInstance.Classes"); -- Shows you all available classes
 help("ZInstance.List"); -- Shows you how to use ZInstance.List.
 ```
 
+---
+
 #### Playing a sound
 ```lua
 Audio:Play("Boombox:Stepping Up");
 ```
 
-This plays the sound called `Boombox:Stepping Up` since it exists in the Revive engine, but you can do more since `Audio:Play` returns a [ZSound](docs/ZSound), you can use their methods and change their properties. `run help("ZInstance.Classes.ZSound")` for more.
+This plays the sound called `Boombox:Stepping Up` since it exists in the Revive engine, but you can do more since [`Audio:Play`](docs/Class/Audio.md#play) returns a [ZSound](docs/ZInstance/ZSound), you can use their methods and change their properties. `run help("ZInstance.Classes.ZSound")` for more.
 
 >⚡To stop the sound. Use `ZInstance:DestroyList("ZSound", true)`. Which destroys all instances matching the word `ZSound` in its name.
 >
@@ -90,7 +99,26 @@ zsound.Volume = 1;
 task.wait(5);
 zsound:Destroy();
 ```
+---
 
 #### Spawning an instance
-> Read [here](docs/global#new)
 
+```lua
+local zsound = new("ZSound"){
+    SoundId = "rbxassetid://142376088"; -- Parry Gripp - Raining Tacos
+};
+
+zsound:Play(); -- Plays the newly spawned sound.
+```
+
+> More info on [`new(className: *string*)`](docs/global#new).
+
+---
+
+### Why it's made
+
+- The idea for this is ambitious, with the development of [Almonds](https://www.roblox.com/games/5623142930/Almdes), we are hoping to incoorporate modded servers in the game. This provides a ease of access to create a modded Almonds server.
+    - To let community servers decide for themselves how their community want the world to be played.
+    - To also be able to create custom community content derived from the base game. 
+- This can also be utilized for some high level puzzle solving minigame.
+- But mostly, this was just fun to work on for me.

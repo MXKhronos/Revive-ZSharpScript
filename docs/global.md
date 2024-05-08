@@ -1,6 +1,6 @@
 ---
 layout: default
-title: global
+title: Globals
 nav_order: 1
 ---
 
@@ -8,34 +8,34 @@ These are global values that exists in the **ZSharp** environment.
 
 ---
 
-#### Lua
+## ZSharp globals
 
-| Type | Key |
-| --- | --- |
-| function | getfenv |
-| function | ipairs |
-| table | math |
-| function | next |
-| function | pairs |
-| function | pcall |
-| function | print |
-| table | table |
-| table | task |
-
-#### ZSharp
+### Class & Methods
 
 | Type | Key |
 | --- | --- |
 | string | ScriptName |
 | | |
-| table | Audio |
-| table | ZInstance |
+| table | [Self](#Self) |
+| table | [Audio](Class/Audio.md) |
+| table | [TweenService](Class/TweenService.md)
+| table | [ZInstance](ZInstance.md) |
 | | |
 | function | [help](#help) |
 | function | [log](#log) |
 | function | [new](#new) |
 
+### Classes
+
+<a name="Self"></a>
+`table` **Self** = *nil*
+- Self contains property and methods of the calling class or environment.
+- Self only exist if the script is attached to an object. 
+
 ---
+
+### Methods
+
 <a name="help"></a>
 `void` **help**(path: *string*)
 - Outputs help hints and descriptions.
@@ -52,11 +52,13 @@ help("ZInstance.List"); -- Shows you how to use ZInstance.List.
 ```
 
 ---
+
 <a name="log"></a>
 `void` **log**(...)
 - Basically print, but properly formats value.
 
 ---
+
 <a name="new"></a>
 `ZInstance` **new**(className: *string*)
 - Instantiates a new instance of `ClassName`.
@@ -76,3 +78,36 @@ zsound:Play();
 ```
 
 ---
+
+## Globals
+
+### Lua
+
+| Type | Key |
+| --- | --- |
+| function | getfenv |
+| function | ipairs |
+| table | math |
+| function | next |
+| function | pairs |
+| function | pcall |
+| function | print |
+| table | string |
+| function | select |
+| table | table |
+| table | task |
+| function | tick |
+| function | tonumber |
+| function | tostring |
+| function | typeof |
+| function | unpack |
+
+### Roblox
+
+| Type | Key |
+| --- | --- |
+| Enums | Enum |
+| table | CFrame |
+| table | Random |
+| table | Vector2 |
+| table | Vector3 |
