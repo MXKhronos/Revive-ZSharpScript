@@ -20,7 +20,7 @@ EventService is a ZSharp unique library for handling game events. From `OnClockT
 | --- | --- |
 | [EventPacket](#eventpacket) | [Invoke](#invoke) (key: *string*, ...) |
 | () -> nil | [OnInvoked](#oninvoked) (key: *string*, func: *(event: EventPacket, ...any) -> nil*, position: *number?*) |
-| {[number]: string} | [ListHandlers](#listhandlers) (pattern: *string?*, search: *boolean?*)
+| {[number]: string} | [ListHandlers](#listhandlers) (pattern: *string?*, search: *boolean?*) |
 
 ### Property Descriptions
 No available properties
@@ -38,6 +38,20 @@ No available properties
 `() -> nil` **OnInvoked**(key: *string*, func: *(event: [EventPacket](#eventpacket), ...any) -> nil*, position: *number?*)
 - Connects a `function` to handle when a event of `key` is invoked.
 - Returns a `function`, which disconnects the handler when called.
+
+Examples:
+- Listening to `OnClockTick` event.
+
+```lua
+local disFunc = EventService:OnInvoked("OnClockTick", function(event: EventPacket, ...)
+    local osTime = ... -- Based on event key arguments. Check event key list.
+
+    print("Current time", osTime); -- Prints os timestamp every second when the clock ticks.
+end)
+
+task.wait(5);
+disFunc(); -- Disconnect event listener after 5 seconds.
+```
 
 ---
 
@@ -104,9 +118,9 @@ Event packets are objects that allow you to cancel events.
 ## Event Key List
 <a name="eventkeys"></a>
 
-| Keys |
-| --- |
-| `OnClockTick` |
-| `WeatherService.OnWeatherSet` |
+| Keys | Arguments |
+| --- | --- |
+| `OnClockTick` | OsTime |
+| `WeatherService.OnWeatherSet` | WeatherPacket |
 
 ---

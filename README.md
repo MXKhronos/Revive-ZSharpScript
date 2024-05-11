@@ -86,7 +86,7 @@ help("Instance.List"); -- Shows you how to use Instance.List.
 Audio:Play("Boombox:Stepping Up");
 ```
 
-This plays the sound called `Boombox:Stepping Up` since it exists in the Revive engine, but you can do more since [`Audio:Play`](docs/Class/Audio.md#play) returns a [Sound](docs/Instance/Sound), you can use their methods and change their properties. `run help("Instance.Classes.Sound")` for more.
+This plays the sound called `Boombox:Stepping Up` since it exists in the Revive engine, but you can do more since [`Audio:Play`](docs/Class/Audio.md#play) returns a [Sound](docs/Instance/Sound.md), you can use their methods and change their properties. `run help("Instance.Classes.Sound")` for more.
 
 >⚡To stop the sound. Use `Instance:DestroyList("Sound", true)`. Which destroys all instances matching the word `Sound` in its name.
 >
