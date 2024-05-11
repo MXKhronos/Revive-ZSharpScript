@@ -55,7 +55,7 @@ To run your script, you can press the **Run** button on the bottom left.
 ## global & Instances and Classes
 
 <a name="libraries"></a>
-- [global](docs/global)
+- [global](docs/global.md)
 - [Instances](docs/Instance.md)
 - [Classes](docs/Class.md)
 
@@ -68,7 +68,7 @@ These are examples of what you can currently do in ZSharp.
 `void` **help**(path: *string*)
 **ZSharp** has a built in `help` function to list available libraries and shows it's hints and descriptions.
 
-> More info [here](docs/global#help)
+> More info [here](docs/global.md#help)
 
 Try running some of these in `run` or `code`.
 ```lua
@@ -111,7 +111,7 @@ local sound = new("Sound"){
 sound:Play(); -- Plays the newly spawned sound.
 ```
 
-> More info on [`new(className: *string*)`](docs/global#new).
+> More info on [`new(className: *string*)`](docs/global.md#new).
 
 ---
 

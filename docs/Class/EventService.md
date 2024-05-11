@@ -81,7 +81,7 @@ Event packets are objects that allow you to cancel events.
 | boolean | [Cancelled](#cancelled) | false |
 | boolean | [Completed](#completed) | false |
 | {[number]: Player}? | Players | nil |
-<br>
+
 
 ### Methods
 
