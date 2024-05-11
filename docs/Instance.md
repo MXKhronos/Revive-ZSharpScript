@@ -1,6 +1,6 @@
 ---
 layout: default
-title: ZInstance
+title: Instance
 has_children: true
 nav_order: 2
 ---
@@ -12,7 +12,7 @@ A sandboxed version of [Instance](https://create.roblox.com/docs/reference/engin
 
 | Type | Key | Default Value |  
 | --- | --- | --- |  
-| string | ClassName | ZInstance |  
+| string | ClassName | Instance |  
 | string | [Name](#name) | `ClassName#counter ` |
 | table | [ClassList](#classlist) | {*userdata*} |
 
@@ -20,9 +20,9 @@ A sandboxed version of [Instance](https://create.roblox.com/docs/reference/engin
 
 | Return Type | Name |
 | --- | --- |
-| ZInstance | [Get](#get) (name: *string*) |
+| Instance | [Get](#get) (name: *string*) |
 | table | [List](#list) (pattern: *string?*, search: *boolean?*) |
-| void | [DestroyList](#destroylist) (pattern: *string?*, search: *boolean?*) |
+| nil | [DestroyList](#destroylist) (pattern: *string?*, search: *boolean?*) |
 
 ---
 
@@ -31,7 +31,7 @@ A sandboxed version of [Instance](https://create.roblox.com/docs/reference/engin
 <a name="name"></a>
 `string` **Name** *= ClassName#counter*
 - By default, every new instance will be named by it's `ClassName` followed by it's index counter.
-- **ZInstance** keeps track of all instances it creates and continuously increment a counter.
+- **Instance** keeps track of all instances it creates and continuously increment a counter.
 
 ---
 
@@ -45,9 +45,9 @@ A sandboxed version of [Instance](https://create.roblox.com/docs/reference/engin
 ### Method Descriptions
 
 <a name="get"></a>
-`ZInstance` **Get**(name: *string*)
-- Gets a ZInstance by name. If there are multiple instances with the same name, it will only return the first one found.
-- The return value can differ base on the instance's class, if the instance stored is a [ZSound](ZSound), it will return a ZSound.
+`Instance` **Get**(name: *string*)
+- Gets a Instance by name. If there are multiple instances with the same name, it will only return the first one found.
+- The return value can differ base on the instance's class, if the instance stored is a [Sound](Sound), it will return a Sound.
 
 ---
 
@@ -64,6 +64,6 @@ A sandboxed version of [Instance](https://create.roblox.com/docs/reference/engin
 ---
 
 <a name="destroylist"></a>
-`void` **DestroyList**(pattern: *string?*, search: *boolean?*)
+`nil` **DestroyList**(pattern: *string?*, search: *boolean?*)
 - `pattern` & `search` works the same as [List](#list)
 - It will destroy every matching item.

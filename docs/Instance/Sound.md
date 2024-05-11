@@ -1,11 +1,11 @@
 ---
 layout: default
-title: ZSound
-parent: ZInstance
+title: Sound
+parent: Instance
 nav_order: 1
 ---
 
-**Inherits:** [ZInstance](ZInstance)
+**Inherits:** [Instance](Instance)
 ### Description
 A sandboxed version of [Sound](https://create.roblox.com/docs/reference/engine/classes/Sound).
 
@@ -13,7 +13,7 @@ A sandboxed version of [Sound](https://create.roblox.com/docs/reference/engine/c
 
 | Type | Key | Default Value |  
 | --- | --- | --- |  
-| string | ClassName | ZSound |  
+| string | ClassName | Sound |  
 | number | PlaybackSpeed | 1 |
 | string | SoundId |  |
 | number | Volume | 0.5 |
@@ -22,8 +22,8 @@ A sandboxed version of [Sound](https://create.roblox.com/docs/reference/engine/c
 
 | Return Type | Name |
 | --- | --- |
-| void | [Play](#play) () |
-| void | [Stop](#stop) () |
+| nil | [Play](#play) () |
+| nil | [Stop](#stop) () |
 
 ---
 
@@ -40,10 +40,10 @@ A sandboxed version of [Sound](https://create.roblox.com/docs/reference/engine/c
 Example:
 
 ```lua
-local zsound = Audio:Play("Boombox:Stepping Up");
+local sound = Audio:Play("Boombox:Stepping Up");
 task.wait(3);
-zsound.SoundId = "rbxassetid://1836846557"; -- "Boombox:Get Up On Your Feet"
-zsound:Play();
+sound.SoundId = "rbxassetid://1836846557"; -- "Boombox:Get Up On Your Feet"
+sound:Play();
 ```
 
 Changes the playing sound to *"Boombox:Get Up On Your Feet"* after 3 seconds.
@@ -57,13 +57,13 @@ Changes the playing sound to *"Boombox:Get Up On Your Feet"* after 3 seconds.
 
 ### Method Descriptions
 <a name="play"></a>
-`void` **Play**()
+`nil` **Play**()
 - Plays the sound
 
 ---
 
 <a name="stop"></a>
-`void` **Stop**()
+`nil` **Stop**()
 - Stops the sound
 
 ---

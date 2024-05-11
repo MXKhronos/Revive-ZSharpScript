@@ -56,7 +56,7 @@ To run your script, you can press the **Run** button on the bottom left.
 
 <a name="libraries"></a>
 - [global](docs/global)
-- [ZInstances](docs/ZInstance.md)
+- [Instances](docs/Instance.md)
 - [Classes](docs/Class.md)
 
 ---
@@ -74,9 +74,9 @@ Try running some of these in `run` or `code`.
 ```lua
 help("Audio.Play"); -- Shows you how to use Audio.Play.
 
-help("ZInstance.Classes"); -- Shows you all available classes
+help("Instance.Classes"); -- Shows you all available classes
 
-help("ZInstance.List"); -- Shows you how to use ZInstance.List.
+help("Instance.List"); -- Shows you how to use Instance.List.
 ```
 
 ---
@@ -86,29 +86,29 @@ help("ZInstance.List"); -- Shows you how to use ZInstance.List.
 Audio:Play("Boombox:Stepping Up");
 ```
 
-This plays the sound called `Boombox:Stepping Up` since it exists in the Revive engine, but you can do more since [`Audio:Play`](docs/Class/Audio.md#play) returns a [ZSound](docs/ZInstance/ZSound), you can use their methods and change their properties. `run help("ZInstance.Classes.ZSound")` for more.
+This plays the sound called `Boombox:Stepping Up` since it exists in the Revive engine, but you can do more since [`Audio:Play`](docs/Class/Audio.md#play) returns a [Sound](docs/Instance/Sound), you can use their methods and change their properties. `run help("Instance.Classes.Sound")` for more.
 
->⚡To stop the sound. Use `ZInstance:DestroyList("ZSound", true)`. Which destroys all instances matching the word `ZSound` in its name.
+>⚡To stop the sound. Use `Instance:DestroyList("Sound", true)`. Which destroys all instances matching the word `Sound` in its name.
 >
->More info on [ZInstance](docs/ZInstance)
+>More info on [Instance](docs/Instance)
 
 ```lua
-local zsound = Audio:Play("Boombox:Stepping Up");
-zsound.Volume = 1;
+local sound = Audio:Play("Boombox:Stepping Up");
+sound.Volume = 1;
 
 task.wait(5);
-zsound:Destroy();
+sound:Destroy();
 ```
 ---
 
 #### Spawning an instance
 
 ```lua
-local zsound = new("ZSound"){
+local sound = new("Sound"){
     SoundId = "rbxassetid://142376088"; -- Parry Gripp - Raining Tacos
 };
 
-zsound:Play(); -- Plays the newly spawned sound.
+sound:Play(); -- Plays the newly spawned sound.
 ```
 
 > More info on [`new(className: *string*)`](docs/global#new).

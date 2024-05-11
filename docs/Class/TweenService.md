@@ -2,7 +2,7 @@
 layout: default
 title: TweenService
 parent: Class
-nav_order: 2
+nav_order: 20
 ---
 
 ### Description
