@@ -18,9 +18,9 @@ EventService is a ZSharp unique library for handling game events. From `OnClockT
 
 | Return Type | Name |
 | --- | --- |
-| [EventPacket](#eventpacket) | [Invoke](#invoke) (key: *string*, ...) |
+| [EventPacket](#eventpacket) | [Invoke](#invoke) (key: *string*, playerPacket: *(Player | {Player})?*, ...) |
 | [Signal](../Instance/Signal.md) | [OnInvoked](#oninvoked) (key: *string*, func: *(event: EventPacket, ...any) -> nil*, position: *number?*) |
-| {[number]: string} | [ListHandlers](#listhandlers) (pattern: *string?*, search: *boolean?*) |
+| {string} | [ListHandlers](#listhandlers) (pattern: *string?*, search: *boolean?*) |
 
 ### Property Descriptions
 No available properties
@@ -29,20 +29,25 @@ No available properties
 ### Method Descriptions
 
 <a name="invoke"></a>
-[`EventPacket`](#eventpacket) **Invoke**(key: *string*, ...)
+[`EventPacket`](#eventpacket) **Invoke**(key: *string*, playerPacket: *(Player | {Player})?*, ...)
 - Invokes an event of `key`. To see list of active event handlers, use [`EventService:ListHandlers()`](#listhandlers).
+- `@param` playerPacket:
+
+	- [Server Invoke] `nil` is the same as an empty table.
+	- [Server Invoke] `{Player}` a list of players that can event can invoke to.
+	- [Client Invoke] playerPacket input doesn't matter, it always default to `LocalPlayer`.
 
 ---
 
 <a name="oninvoked"></a>
 `Signal` **OnInvoked**(key: *string*, func: *(event: [EventPacket](#eventpacket), ...any) -> nil*, position: *number?*)
 - Connects a `function` to handle when a event of `key` is invoked.
-- Returns a `[Signal](../Instance/Signal.md)`, which disconnects when the instance is destroyed.
+- Returns a [`Signal`](../Instance/Signal.md), which disconnects when the instance is destroyed.
 
 Examples:
-- Listening to `OnClockTick` event.
 
 ```lua
+-- Listening to `OnClockTick` event.
 local disFunc = EventService:OnInvoked("OnClockTick", function(event: EventPacket, ...)
     local osTime = ... -- Based on event key arguments. Check event key list.
 
@@ -118,9 +123,9 @@ Event packets are objects that allow you to cancel events.
 ## Event Key List
 <a name="eventkeys"></a>
 
-| Keys | Arguments |
-| --- | --- |
-| `OnClockTick` | OsTime |
-| `WeatherService.OnWeatherSet` | WeatherPacket |
+| Keys | Arguments | Data Type |
+| --- | --- | --- |
+| `OnClockTick` | ServerTime | `number` |
+| `WeatherService.OnWeatherSet` | WeatherPacket | `{any}` |
 
 ---

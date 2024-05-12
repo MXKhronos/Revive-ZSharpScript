@@ -7,7 +7,7 @@ nav_order: 19
 
 **Inherits:** [Instance](../Instance.md)
 ### Description
-A Signal is an instance that when destroy, 
+A Signal is an instance that is created when a function is connected to a signal. When destroyed, the function is disconnected. 
 
 ### Properties
 
