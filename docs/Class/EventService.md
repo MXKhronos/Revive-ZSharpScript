@@ -85,7 +85,8 @@ Event packets are objects that allow you to cancel events.
 | --- | --- | --- |
 | boolean | [Cancelled](#cancelled) | false |
 | boolean | [Completed](#completed) | false |
-| {[number]: Player}? | Players | nil |
+| Player? | [Player](#player) | nil |
+| {Player}? | [Players](#players) | nil |
 
 
 ### Methods
@@ -108,6 +109,15 @@ Event packets are objects that allow you to cancel events.
 `boolean` **Completed** *= false*
 - When completed, canceling events will have no effect.
 
+<a name="player"></a>
+`Player?` **Player** *= nil*
+- Returns the first player in `EventPacket.Players` or `nil`.
+
+<a name="players"></a>
+`{Player}?` **Players** *= nil*
+- Returns the list of players. Server will replicate the event to the list of players in this list. If a player is removed, they will not receive the event signal. 
+- Has no replication effect on client side. 
+
 ---
 <br>
 
@@ -125,7 +135,7 @@ Event packets are objects that allow you to cancel events.
 
 | Keys | Arguments | Data Type |
 | --- | --- | --- |
-| `OnClockTick` | ServerTime | `number` |
+| `OnClockTick` | serverTime | `number` |
 | `WeatherService.OnWeatherSet` | WeatherPacket | `{any}` |
 
 ---
