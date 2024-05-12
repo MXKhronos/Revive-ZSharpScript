@@ -21,7 +21,7 @@ A sandboxed version of [Player](https://create.roblox.com/docs/reference/engine/
 
 | Return Type | Name |
 | --- | --- |
-
+| | |
 
 ---
 

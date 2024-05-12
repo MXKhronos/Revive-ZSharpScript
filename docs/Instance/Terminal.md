@@ -13,11 +13,13 @@ A Terminal is an instance that exist when you are using a physical terminal in g
 
 | Type | Key | Default Value |  
 | --- | --- | --- |  
+| | |
 
 ### Methods
 
 | Return Type | Name |
 | --- | --- |
+| | |
 
 ---
 
