@@ -19,7 +19,7 @@ EventService is a ZSharp unique library for handling game events. From `OnClockT
 | Return Type | Name |
 | --- | --- |
 | [EventPacket](#eventpacket) | [Invoke](#invoke) (key: *string*, ...) |
-| () -> nil | [OnInvoked](#oninvoked) (key: *string*, func: *(event: EventPacket, ...any) -> nil*, position: *number?*) |
+| [Signal](../Instance/Signal.md) | [OnInvoked](#oninvoked) (key: *string*, func: *(event: EventPacket, ...any) -> nil*, position: *number?*) |
 | {[number]: string} | [ListHandlers](#listhandlers) (pattern: *string?*, search: *boolean?*) |
 
 ### Property Descriptions
@@ -35,9 +35,9 @@ No available properties
 ---
 
 <a name="oninvoked"></a>
-`() -> nil` **OnInvoked**(key: *string*, func: *(event: [EventPacket](#eventpacket), ...any) -> nil*, position: *number?*)
+`Signal` **OnInvoked**(key: *string*, func: *(event: [EventPacket](#eventpacket), ...any) -> nil*, position: *number?*)
 - Connects a `function` to handle when a event of `key` is invoked.
-- Returns a `function`, which disconnects the handler when called.
+- Returns a `[Signal](../Instance/Signal.md)`, which disconnects when the instance is destroyed.
 
 Examples:
 - Listening to `OnClockTick` event.

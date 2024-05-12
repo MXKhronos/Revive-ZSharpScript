@@ -2,10 +2,10 @@
 layout: default
 title: Sound
 parent: Instance
-nav_order: 1
+nav_order: 19
 ---
 
-**Inherits:** [Instance](Instance)
+**Inherits:** [Instance](../Instance.md)
 ### Description
 A sandboxed version of [Sound](https://create.roblox.com/docs/reference/engine/classes/Sound).
 
@@ -14,8 +14,9 @@ A sandboxed version of [Sound](https://create.roblox.com/docs/reference/engine/c
 | Type | Key | Default Value |  
 | --- | --- | --- |  
 | string | ClassName | Sound |  
+| string | Name | Sound |  
 | number | PlaybackSpeed | 1 |
-| string | SoundId |  |
+| string | SoundId | nil |
 | number | Volume | 0.5 |
 
 ### Methods
@@ -24,6 +25,7 @@ A sandboxed version of [Sound](https://create.roblox.com/docs/reference/engine/c
 | --- | --- |
 | nil | [Play](#play) () |
 | nil | [Stop](#stop) () |
+| nil | [Destroy](#destroy) () |
 
 ---
 
@@ -65,5 +67,11 @@ Changes the playing sound to *"Boombox:Get Up On Your Feet"* after 3 seconds.
 <a name="stop"></a>
 `nil` **Stop**()
 - Stops the sound
+
+---
+
+<a name="destroy"></a>
+`nil` **Destroy**()
+- Destroy the instance.
 
 ---
